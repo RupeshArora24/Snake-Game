@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.body{
+    background: url("../back.jpg");
+    min-height: 100vh; /* vh means veiw height it sets the heght according to the device*/
+    background-size: 115vw 100vh; /* setting the background with size 100 view width and 100 view height*/
+    background-repeat: no-repeat; /*In case of small images the background may repet it will stop the repetation of background*/
+    display: flex;/*it is used to make fit the body class for every type of window size */
+    
+
+}
+
+#board{
+    background: linear-gradient(rgb(6, 104, 6),rgb(80, 235, 82));
+    width: 90vmin; /* the viewport is 1000px wide and 800px high, if we set the width of an element to 30vmin , it will be 30% of the height.AS HEIGHT VALUE is smaller minimum. If we use vmax then it choose 1000 that is width*/
+    height: 82vmin;
+    margin-top: 70px;
+    margin-left: 200px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);/*1fr is 1 part of the whole so there will be 18 rows as 1fr is repeting 18 times*/
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: black;
+    border: .25vmin solid white;
+}
+
+.snake{
+    background-color: rgb(246, 129, 149);
+    border: .25vmin solid white;
+    border-radius: 30%;
+}
+
+.food{
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 50%;
+}
+
+#scorebox{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 100px;
+    right: 110px;
+    font-size: 39px;
+    font-weight: bold;
+}
