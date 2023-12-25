@@ -5,7 +5,7 @@ const foodsound = new Audio('food.mp3');
 const gameOverSound = new Audio('gameover.mp3');
 const movesound = new Audio('move.mp3');
 const musicSound = new Audio('music.mp3');
-let speed = 5;
+let speed = 9;
 let lastPaintTime = 0;
 let snakeArr = [{x:9,y:9}]; // intialy the 0,0 origin of our box is the top left corener point 
 let score = 0; 
@@ -127,7 +127,7 @@ function gameEngine(){
 // Game Logic starts here
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore==null){
-    highscoreval = 0;
+    hiscoreval = 0;
     localStorage.setItem("hiscore",JSON.stringify(hiscoreval)) // here we cant directly set to 0 we need tomake the 0 as string
 }
 
