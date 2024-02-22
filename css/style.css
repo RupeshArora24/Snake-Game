@@ -2,7 +2,7 @@
     padding: 0; 
     margin:0;
 } 
- 
+  
 .body{
     background: url("../back.jpg");
     min-height: 100vh; /* vh means veiw height it sets the heght according to the device*/
