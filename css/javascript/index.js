@@ -10,7 +10,7 @@ let lastPaintTime = 0;
 let snakeArr = [{x:9,y:9}]; // intialy the 0,0 origin of our box is the top left corener point 
 let score = 0; 
   
- 
+  
 
 food = {x: 3 , y: 5}; // this is food element it is the object not the array
 //Game Functions 
